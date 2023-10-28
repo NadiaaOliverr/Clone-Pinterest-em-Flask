@@ -13,5 +13,19 @@
     <body>
         <p>Home Page no ar</p>
     </body>
+    {% block formulario %}
+        
+        <form action="" method="post">
+            {{ form.csrf_token }}
+            
+            {{ form.email.label() }}
+            {{ form.email() }}
+            
+            {{ form.senha.label() }}
+            {{ form.senha() }}
+            
+            {{ form.botao_confirmacao() }}
+        </form>
+    {% endblock %}
 {% endblock %}
 </html>
