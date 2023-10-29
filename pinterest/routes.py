@@ -66,3 +66,9 @@ def perfil(id_usuario):
     else:
         usuario = Usuario.query.get(int(id_usuario))
         return render_template("perfil.html", usuario=usuario, form=None)
+    
+@app.route("/feed")
+@login_required
+def feed():
+    fotos = Post.query.order_by(Post.data_criacao.desc()).all()
+    return render_template("feed.html", fotos = fotos)
