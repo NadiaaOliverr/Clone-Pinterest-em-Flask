@@ -6,7 +6,13 @@
 
 {% block body %}
     <body>
-        <p>Perfil do usuário: {{usuario}} </p>
+        <p>Perfil do usuário: {{usuario.username}} </p>
         <a href="{{ url_for('logout') }}">Sair</a>
     </body>
+    
+    <img src="{{ url_for('static', filename='fotos_posts/default.png') }}" alt="">
+
+    {% for foto in usuario.posts %}
+    {% endfor %}
+
 {% endblock %}
