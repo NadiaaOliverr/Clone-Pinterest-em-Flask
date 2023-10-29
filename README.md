@@ -2,9 +2,7 @@
 
 Aplicação de uma réplica simples do site *Pinterest* cujo **backend foi elaborado com o Framework Flask**, onde foi trabalhado conceitos de validações, persistências no banco, salvamento de imagens, dentre outros. A aplicação inclui recursos como adição de usuário, login de usuário e feed geral de fotos com possibilidade de navegação entre diferentes perfis. Além disso, foi programado um frontend compatível com o site Pinterest.
 
-![](https://i.imgur.com/goDFuOA.png)
-
-<!-- ![Gif que mostra o projeto em execução e as funcionalidades](https://i.imgur.com/EeWkRbK.gif) -->
+![Gif que mostra o projeto em execução e as funcionalidades](https://i.imgur.com/yL1ZhJF.gif)
 
 ### Ferramentas e Funcionalidades :bulb:
 
