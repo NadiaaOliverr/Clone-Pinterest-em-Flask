@@ -38,7 +38,9 @@ Agora, para executar o código, digite:
 python main.py
 ```
 
-Após isso, basta abrir o navegador no link `localhost:5000`
+Após isso, basta abrir o navegador no link `localhost:5000` e verá a tela abaixo:
+
+![](https://i.imgur.com/4XPKpUa.png)
 
 **Obs:** Não é obrigatório criar um ambiente virtual, mas, recomendo que o faça para separar as dependências do projeto e evitar conflitos de versões.  
 
