@@ -1,18 +1,24 @@
 {% extends 'homepage.html' %}
 
 {% block titulo %}
-    Perfil - {{usuario}}
+    Perfil - {{usuario.username}}
 {% endblock %}
 
 {% block body %}
     <body>
         <p>Perfil do usuário: {{usuario.username}} </p>
+        {%if form%}
+            <form action="" method="POST" enctype="multipart/form-data">
+                {{ form.csrf_token }}
+    
+                {{ form.foto}}
+                {{ form.botao_confirmacao}}
+            </form>
+        {%endif%}
+        {% for foto in usuario.fotos %}
+            <img src="{{ url_for('static', filename='fotos_posts/{}'.format(foto.imagem)) }}" alt="">
+        {% endfor %}
         <a href="{{ url_for('logout') }}">Sair</a>
     </body>
-    
-    <img src="{{ url_for('static', filename='fotos_posts/default.png') }}" alt="">
-
-    {% for foto in usuario.posts %}
-    {% endfor %}
 
 {% endblock %}
